@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailMovieActivity">
+
+    <TextView
+        android:id="@+id/tv_contentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/content_title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/iv_contentPoster"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iv_contentPoster"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/release_date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+            <TextView
+                android:id="@+id/tv_contentReleaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/content_release_date"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/popularity"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+            <TextView
+                android:id="@+id/tv_contentPopularity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/content_popularity"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vote_average"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+            <TextView
+                android:id="@+id/tv_contentVoteAverage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/content_vote_average"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_contentOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="@string/content_overview"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:id="@+id/btn_buy_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buy_ticket"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+</LinearLayout>

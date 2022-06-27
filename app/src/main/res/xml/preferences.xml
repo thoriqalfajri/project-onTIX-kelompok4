@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:iconSpaceReserved="false">
+
+    <EditTextPreference
+        android:inputType="text"
+        android:key="@string/name"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="-"
+        android:title="@string/Name"
+        android:icon="@drawable/ic_name"
+        app:iconSpaceReserved="false" />
+    <EditTextPreference
+        android:inputType="textEmailAddress"
+        android:key="@string/email"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="-"
+        android:title="@string/Email"
+        android:icon="@drawable/ic_email"
+        app:iconSpaceReserved="false" />
+    <EditTextPreference
+        android:inputType="number"
+        android:key="@string/phone"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="-"
+        android:title="@string/Phone"
+        android:icon="@drawable/ic_phone"
+        app:iconSpaceReserved="false" />
+    <EditTextPreference
+        android:inputType="text"
+        android:key="@string/address"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="-"
+        android:title="@string/Address"
+        android:icon="@drawable/ic_address"
+        app:iconSpaceReserved="false" />
+</PreferenceScreen>
